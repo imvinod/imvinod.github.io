@@ -18,24 +18,15 @@
 
     <div class="hero-body">
       <div class="container">
-		<div class = "row">
-			<div class="col-3 d-none d-lg-block align-self-center">
-              <img class="rounded-circle" src="img/me.png">
 
-				<div id = "git-block" class = "row">
-				<div class="col d-none d-lg-block align-self-center">
-					<a href="https://github.com/imvinod" class="icon is-large has-text-light">
-					<i class="fab fa-2x fa-github"></i>
-				  	</a>
-
-					<a href="https://github.com/imvinod" class="icon is-large has-text-light">
-					<i class="fab fa-2x fa-linkedin"></i>
-				  	</a>
-		      </div>
-		      </div>
+		<div class = "row text-center">
+			<div class="col">
+              <img class="rounded-circle center-block" src="img/me-small.png"></img>
 
 			</div>
+		</div>
 
+		<div class = "row">
 			<div class="col">
 		    <div class="columns has-text-centered">
 		      <div class="column">
@@ -47,9 +38,10 @@
 		        </h2>
 				<div class = "row">
 				<div class="col d-none d-lg-block align-self-center">
-					<a class="btn btn-outline-light btn-lg " href="#aboutme" role="button" aria-label="Learn more about me">Projects</a>
-					<a class="btn btn-outline-light btn-lg " href="#aboutme" role="button" aria-label="Learn more about me">Experience</a>
-					<a class="btn btn-outline-light btn-lg " href="docs/resume.txt" role="button" aria-label="Learn more about me">Resume</a>
+					<a class="btn btn-outline-light btn-lg " href="#projects" role="button" aria-label="Learn more about me">Projects</a>
+					<a class="btn btn-outline-light btn-lg " href="#experience" role="button" aria-label="Learn more about me">Experience</a>
+					<a class="btn btn-outline-light btn-lg " href="#education" role="button" aria-label="Learn more about me">Education</a>
+					<a class="btn btn-outline-light btn-lg " href="docs/resume.pdf" role="button" aria-label="Learn more about me">Resume</a>
 				</div>
 				</div>
 
@@ -64,7 +56,24 @@
 
   <section class="section jumbotron">
     <div class="container">
-      <h1 class="display-4 pb-5">About Me</h1>
+		<div class = "row">
+			<div class="col-md-3">
+		      <h1 class="display-4 pb-3">About Me</h1>
+			</div>
+			<div id=git-block class="col ">
+					<a href="https://github.com/imvinod" title="Github"  target="_blank" class="icon is-large ">
+					<i class="fab fa-2x fa-github" style="font-size:36px;color:black"></i>
+				  	</a>
+
+					<a href="https://www.linkedin.com/in/vinodkumarhere/" title="LinkedIn" target="_blank" class="icon is-large">
+					<i class="fab fa-2x fa-linkedin" style="font-size:36px;color:black"></i>
+				  	</a>
+
+					<a href="docs/resume.pdf" title="Resume"  target="_blank" class="icon is-large">
+					<i class="fa fa-2x fa-file-pdf-o" style="font-size:34px;color:black"></i>
+				  	</a>
+			</div>
+		</div>
 
       <p>After 8 years of start-up and corporate work experience, I enrolled for MS Computer Science program at Georgia Tech, Atlanta. For the past 3 years I have been working on Computer Vision projects with Deep Learning techniques.</p>
 	  <p>
@@ -73,20 +82,34 @@
     </div>
   </section>
 
+<!---  PROJECTS -->
+<div id="projects"></div>
   <section class="section bg-light m-0 jumbotron jumbotron-fluid">
     <div class="container">
       <h1 class="display-4 pb-5">Personal Projects</h1>
 		<div class = "row">
-			<div class="col-md-4">
+			<div class="col-md-4 modal-trigger" data-target="project-1-modal"">
 				<div class="card shadow-lg p-3 mb-5 bg-white rounded card">
 					<div class="card-body">
-				        <p class="title">Project title</p>
+				        <h5 class="card-title">Groceries Identification and usage estimation with Deep learning - Amazon Go </p>
 				        <figure class="image is-3by2">
-				          <img class="modal-trigger" data-target="project-1-modal" src="img/project-1-cover.png">
+				          <img  src="img/project-1-cover.png">
 				        </figure>
+						<hr>
+						<div class="pb-3">
+						<span class="badge badge-light">Pytorch</span>
+						<span class="badge badge-light">Python</span>
+						<span class="badge badge-light">OpenCV</span>
+						<span class="badge badge-light">ROS</span>
+						<span class="badge badge-light">MySQL</span>
+						<span class="badge badge-light">JS</span>
+						</div>
+
 					</div>
 				</div>
 			</div>
+
+
 
 			<div class="col-md-4">
 				<div class="card shadow-lg p-3 mb-5 bg-white rounded card">
@@ -145,7 +168,7 @@
 		
   </section>
 
-
+<div id="experience"></div>
   <section class="section">
     <div class="container">
       <h1 class="display-4 pb-5">Experience</h1>
@@ -155,103 +178,280 @@
           <div class="media">
             <div class="media-left">
               <figure class="image is-48x48">
-                <img src="img/dunder-mifflin-logo.png" alt="Placeholder image">
+                <img src="img/ns.jpeg" alt="NS">
               </figure>
             </div>
             <div class="media-content">
-              <p class="title is-4">Company Name</p>
-              <p class="subtitle is-6">Title - <time datetime="2018-1">January 2018</time> - <time
-                  datetime="2019-9">Sepemter 2019</time> </p>
+              <p class="title is-4">Norfolk Southern Corp</p>
+              <p class="subtitle is-6">Deep Learning Intern - <time datetime="2020-9">September 2020</time> - <time
+                  datetime="2020-12">December 2020</time> | Atlanta, GA</p>
             </div>
           </div>
           <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.</p>
+            <p>I was responsible for researching and implementing deep learning techniques on projects that helped improve railway safety.</p>
             <ul>
-              <li>Noteworthy achievment here.</li>
-              <li>Noteworthy achievment here.</li>
-              <li>Noteworthy achievment here.</li>
+              <li>Implemented model to detect missing crucial components under moving rail-cars using Siamese network resulting in improved 				F1 score.</li>
+              <li>Implemented model to detect imperfections on moving rail-car wheels. Extracted wheel region with segmentation and detected 					anomalies on the ROI.</li>
             </ul>
             <div class="tags">
-              <span class="tag">c#</span>
-              <span class="tag">xamarin</span>
-              <span class="tag">asp.net core</span>
-              <span class="tag">.net core</span>
-              <span class="tag">azure</span>
-              <span class="tag">devops</span>
+              <span class="tag">pytorch</span>
+              <span class="tag">keras</span>
+              <span class="tag">python</span>
+              <span class="tag">OpenCV</span>
+              <span class="tag">CVAT</span>
             </div>
           </div>
         </div>
       </div>
+
       <div class="card card-gap">
         <div class="card-content">
           <div class="media">
             <div class="media-left">
               <figure class="image is-48x48">
-                <img src="img/pied-piper-logo.png" alt="Placeholder image">
+                <img src="img/gt.png" alt="GA Tech">
               </figure>
             </div>
             <div class="media-content">
-              <p class="title is-4">Company Name</p>
-              <p class="subtitle is-6">Title - <time datetime="2018-1">August 2017</time> - <time
-                  datetime="2017-9">January 2018</time></p>
+              <p class="title is-4">Georgia Institute of Technology</p>
+              <p class="subtitle is-6">Graduate Teaching Assistant | <time datetime="2020-9">September 2020</time> - <time
+                  datetime="2020-12">December 2020</time> | Atlanta, GA </p>
             </div>
           </div>
           <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.</p>
+            <p>I played the role of Teaching assistant for course CS 3630 - Perception and Robotics.</p>
             <ul>
-              <li>Noteworthy achievment here.</li>
-              <li>Noteworthy achievment here.</li>
-              <li>Noteworthy achievment here.</li>
+              <li>Developed Assignments for students to work on. The code was to be executable on Dukiebot robot.</li>
+			  <li>Tutoring students and grading </li>
             </ul>
             <div class="tags">
-              <span class="tag">c#</span>
-              <span class="tag">xamarin</span>
-              <span class="tag">asp.net core</span>
-              <span class="tag">.net core</span>
-              <span class="tag">azure</span>
-              <span class="tag">devops</span>
+              <span class="tag">python</span>
+              <span class="tag">OpenCV</span>
             </div>
           </div>
         </div>
       </div>
-    </div>
+
+      <div class="card card-gap">
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <img src="img/bosch.jpg" alt="BOSCH">
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-4">Robert Bosch</p>
+              <p class="subtitle is-6">Specialist | <time datetime="2020-9">April 2018</time> - <time
+                  datetime="2020-12">May 2019</time> | Bangalore, India </p>
+            </div>
+          </div>
+          <div class="content">
+            <p>I was a Chassis-control team member. I also worked on perception part of low speed automated vehicle project.</p>
+            <ul>
+              <li>Implementation of Object detection and classification on Bosch dataset for Low Speed Automated Driving</li>
+              <li>Implementation of free space detection with semantic segmentation.</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">tensorflow</span>
+              <span class="tag">keras</span>
+              <span class="tag">python</span>
+              <span class="tag">OpenCV</span>
+              <span class="tag">labelimg</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="card card-gap">
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <img src="img/any.png" alt="Any IOT">
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-4">Any IOT</p>
+              <p class="subtitle is-6">Co-founder, Product development | <time datetime="2020-9">July 2016</time> - <time
+                  datetime="2020-12">Oct 2017</time> | Bangalore, India </p>
+            </div>
+          </div>
+          <div class="content">
+            <p>As a start-up in the IOT service and product space, we focused using IOT based devices in the retail space to customer interaction and satisfaction measurement.</p>
+            <ul>
+              <li>Designed System Architecture for a Cloud connected IOT product.</li>
+              <li>Involved in the back-end server implementation using Ruby on Rails.</li>
+              <li>Front-end development: data analytics and configuration of IOT hardware.</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">keras</span>
+              <span class="tag">python</span>
+              <span class="tag">OpenCV</span>
+              <span class="tag">Ruby on Rails</span>
+              <span class="tag">JS</span>
+              <span class="tag">MongoDB</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-gap">
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <img src="img/3ds.png" alt="3DS">
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-4">3D Systems Corp</p>
+              <p class="subtitle is-6">Senior Software Engineer | <time datetime="2020-9">Nov 2013</time> - <time
+                  datetime="2020-12">Sept 2015</time> | Goa, India </p>
+            </div>
+          </div>
+          <div class="content">
+            <p>My role at 3DS was mainly focused on Firmaware for 3D printers.</p>
+            <ul>
+              <li>Designed and developed firmware modules that interact with sensors and drive actuators.</li>
+              <li>Implemented and tested Firmware Features: Auto-update, Security, Remote printing, adaptive curing and adaptive motion control for SLA 3D printer.</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">C</span>
+              <span class="tag">C++</span>
+              <span class="tag">Microcontrollers</span>
+              <span class="tag">python</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="card card-gap">
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <img src="img/ra.png" alt="RA">
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-4">Robots Alive</p>
+              <p class="subtitle is-6">Systems Engineer, Core-team member | <time datetime="2020-9">Aug 2011</time> - <time
+                  datetime="2020-12">June 2013</time> | Bangalore, India </p>
+            </div>
+          </div>
+          <div class="content">
+            <p>I was one of the early members of the start-up. As in a typical start-up, my role was not limited to a specific technical domain, but across the product development. This led me to work on Software, Firmware, Electronics and Mechanical designs </p>
+            <ul>
+              <li>Development of Android Smart-phone powered mobile robot - Andy. Firmware, power management, motion control. communication and debug protocol. Android apps that interact with the Robot over Wifi: e.g. Spy Cam.</li>
+              <li>Design and development of 3 Axis Table top CNC Router. Mechanical CAD design, Motion control Firmware and testing</li>
+              <li>Development on 2-axis In-mold labelling Robot for Plastic Industry.</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">Python</span>
+              <span class="tag">Android</span>
+              <span class="tag">Java</span>
+              <span class="tag">Solid Works</span>
+              <span class="tag">Microcontrollers</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-gap">
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <img src="img/tcs.jpeg" alt="TCS">
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-4">TATA Consultancy Services</p>
+              <p class="subtitle is-6">Systems Engineer | <time datetime="2020-9">Oct 2009</time> - <time
+                  datetime="2020-12">May 2011</time> | Pune, India </p>
+            </div>
+          </div>
+          <div class="content">
+            <p>I was in the Web development and CMS team responsible for back-end modifications with C# and front end development.</p>
+            <ul>
+              <li>Involved in content management on Microsoft’s CMS for MSN Canada.</li>
+              <li>Front end implementation: MSN Blogs, HTML, CSS, JSS scripts and MSN API Connect.</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">C#</span>
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JSS</span>
+              <span class="tag">CMS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
   </section>
 
 
-
+<div id="education"></div>
   <section class="section">
     <div class="container">
       <h1 class="display-4 pb-5">Education</h1>
 
       <div class="card">
         <div class="card-content">
-          <div class="content">
-            <p class="title is-4">Georgia Institute of Technology</p>
-            <p class="subtitle is-6">Masters in Computer Science - <time datetime="2019-8">August 2019</time> - <time
-                datetime="2021-5">May 2021</time></p>
+
+
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <img src="img/gt.png" alt="GA Tech">
+              </figure>
+            </div>
+            <div class="media-content">
+		        <p class="title is-4">Georgia Institute of Technology, Atlanta, U.S - 3.9/4.0</p>
+		        <p class="subtitle is-6">Masters in Computer Science - <time datetime="2019-8">August 2019</time> - <time
+		            datetime="2021-5">May 2021</time></p>
+            </div>
           </div>
+
+
           <div class="content">
 			Specialization: Computational Perception and Robotics
             <ul>
-              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+              <li>Deep Learning, Machine Learning, AI for Robotics, Knowledge based AI.</li>
+              <li>Computer Vision, Algorithms, Data Analytics with Deep learning, ML for Trading</li>
+              <li>Masters research project, Co-op Internship</li>
             </ul>
           </div>
         </div>
       </div>
       <div class="card card-gap">
         <div class="card-content">
-          <div class="content">
-            <p class="title is-4">School Name</p>
-            <p class="subtitle is-6">Program/Course - <time datetime="2015-9">September 2014</time> - <time
-                datetime="2015-9">Sepemter 2015</time></p>
+
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <img src="img/vtu.png" alt="VTU">
+              </figure>
+            </div>
+            <div class="media-content">
+		        <p class="title is-4">Visvesvaraya Technological University, Mysore, India - 8.3/10.0</p>
+		        <p class="subtitle is-6">Information Science and Engineering - <time datetime="2005-8">August 2005</time> - <time
+		            datetime="2009-5">May 2009</time>  </p>
+            </div>
           </div>
+
           <div class="content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Phasellus nec iaculis mauris.
+			Computer science courses in addition to information systems and management electives.
             <ul>
-              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+              <li>Algorithms, C, OOPS with C++, Java and CGI, Finite Automata.</li>
+              <li>Computer Networks 1 & 2, Advanced Maths 1 & 2, Microprocessor.</li>
+              <li>Logic design, Discrete Mathematics, Graph Theory, Software Engineering</li>
+              <li> Operating Systems, Client Server computing, Cryptography, Mobile communication </li>
+              <li> Database, Unix, Systems software, Management Information Systems </li>
             </ul>
           </div>
         </div>
@@ -259,6 +459,179 @@
     </div>
   </section>
 
+<!--- Courses --->
+
+<div id="courses"></div>
+  <section class="section">
+    <div class="container">
+      <h1 class="display-4 pb-5">Certifications</h1>
+	<!-- Course row 1 -->
+	<div class="row">
+		<div class="col">
+			<div class="card shadow-lg p-3 mb-5 bg-white rounded card">
+				<div class="card-body">
+					<div class="card-content">
+					  <div class="media">
+						<div class="media-left">
+						  <figure class="image is-48x48">
+						    <img src="img/ud.jpeg" alt="Udacity">
+						  </figure>
+						</div>
+						<div class="media-content">
+							<p class="title is-4">Self Driving Car Engineer</p>
+							<p class="subtitle is-6">Udacity | <time datetime="2019-8">Dec 2017</time> - <time
+								datetime="2021-5">Dec 2018</time></p>
+						</div>
+					  </div>
+
+					  <div class="content">
+						Udacity, Mercedes, Uber and NVidia has created a three semester long, specialized course that covers all the major topics and skills required to become a self driving car engineer. I chose the Deep Learning specialization for my last semester.
+						<ul>
+						  <li>Perception: Lane finding, Traffic sign classifier, Behavioural cloning, Vehicle tracking, Scene Understanding, Semantic segmentation </li>
+						  <li>Localization: Particle Filter, Kalman Filters, Lidar and Radar Fusion, Motion Models, Markov Models</li>
+						  <li>Path Planning: Search, Prediction, Behaviour planning, Trajectory generation </li>
+						</ul>
+					  </div>
+
+					  <div class="tags">
+						  <span class="tag">tensorflow</span>
+						  <span class="tag">keras</span>
+						  <span class="tag">OpenCV</span>
+						  <span class="tag">python</span>
+						  <span class="tag">C++</span>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="col">
+			<div class="card shadow-lg p-3 mb-5 bg-white rounded card">
+				<div class="card-body">
+					<div class="card-content">
+					  <div class="media">
+						<div class="media-left">
+						  <figure class="image is-48x48">
+						    <img src="img/coursera.jpeg" alt="Coursera">
+						  </figure>
+						</div>
+						<div class="media-content">
+							<p class="title is-4">Deep Learning Specialization</p>
+							<p class="subtitle is-6">Coursera | <time datetime="2019-8">June 2017</time> - <time
+								datetime="2021-5">Mar 2018</time></p>
+						</div>
+					  </div>
+
+					  <div class="content">
+						A 5 part series that covers from basics to advanced deep learning techniques and applications, designed and developed by Prof. Andrew NG from Stanford.
+						<ul>
+						<li>Neural Networks and Deep Learning: NN Basics, Shallow and Deep NN</li>
+						<li>Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization</li>
+						<li>Structuring Machine Learning Projects: Training strategies and diagnosis</li>
+						<li>Convolutional Neural Networks: CNN, Deep CNN, Object detection, Face Recognition, Style transfer</li>
+						<li>Sequence Models: RNN, NLP & Word embeddings, Sequence models and attention mechanism</li>
+						</ul>						
+					  </div>
+
+					  <div class="tags">
+						  <span class="tag">tensorflow</span>
+						  <span class="tag">keras</span>
+						  <span class="tag">python</span>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Course row 2 -->
+	<div class="row">
+		<div class="col">
+			<div class="card shadow-lg p-3 mb-5 bg-white rounded card">
+				<div class="card-body">
+					<div class="card-content">
+					  <div class="media">
+						<div class="media-left">
+						  <figure class="image is-48x48">
+						    <img src="img/coursera.jpeg" alt="Coursera">
+						  </figure>
+						</div>
+						<div class="media-content">
+							<p class="title is-4">Machine Learning</p>
+							<p class="subtitle is-6">Coursera | <time datetime="2019-8">Jan 2017</time> - <time
+								datetime="2021-5">Aug 2017</time></p>
+						</div>
+					  </div>
+
+					  <div class="content">
+						The 11 week course covers basics to advanced ML concepts along with four major projects, designed and developed by Prof. Andrew NG from Stanford.
+						<ul>
+						<li>Supervised Learning: Linear and Logistic regression, SVM, Neural Network</li>
+						<li>Regularization, Optimization, training strategies, ML system design </li>
+						<li>Unsupervised learning: PCA dimensionality reduction, Anomaly detection</li>
+						<li>Recommender systems, Large scale ML, Photo OCR</li>
+						</ul>						
+					  </div>
+
+					  <div class="tags">
+						  <span class="tag">Matlab</span>
+						  <span class="tag">python</span>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<div class="col">
+			<div class="card shadow-lg p-3 mb-5 bg-white rounded card">
+				<div class="card-body">
+					<div class="card-content">
+					  <div class="media">
+						<div class="media-left">
+						  <figure class="image is-48x48">
+						    <img src="img/udemy.jpeg" alt="Udemy">
+						  </figure>
+						</div>
+						<div class="media-content">
+							<p class="title is-4">Machine Learning A-Z™: Hands-On Python & R In Data Science</p>
+							<p class="subtitle is-6">Udemy | <time datetime="2019-8">June 2017</time> - <time
+								datetime="2021-5">Mar 2018</time></p>
+						</div>
+					  </div>
+
+					  <div class="content">
+						A 5 part series that covers from basics to advanced deep learning techniques and applications, designed and developed by Prof. Andrew NG from Stanford.
+						<ul>
+						<li>Neural Networks and Deep Learning: NN Basics, Shallow and Deep NN</li>
+						<li>Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization</li>
+						<li>Structuring Machine Learning Projects: Training strategies and diagnosis</li>
+						<li>Convolutional Neural Networks: CNN, Deep CNN, Object detection, Face Recognition, Style transfer</li>
+						<li>Sequence Models: RNN, NLP & Word embeddings, Sequence models and attention mechanism</li>
+						</ul>						
+					  </div>
+
+					  <div class="tags">
+						  <span class="tag">tensorflow</span>
+						  <span class="tag">keras</span>
+						  <span class="tag">python</span>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+</div>
+</section>
+
+<!-- Contact -->
+
+
+
+  <div id="contact"></div>
   <section class="section">
     <div class="container">
       <h1 class="display-4 pb-5">Contact</h1>
@@ -295,7 +668,7 @@
 		<div class="level-item has-text-centered">
           <div>
             <a href="http://vinodh.me" class="icon is-large">
-              <i class="fas fa-2x fa-globe"></i>
+              <i class="fas fa-2x fa-globe" ></i>
             </a>
             <p class="heading"><a href="http://vinodh.me">vinodh.me</a></p>
           </div>
@@ -567,6 +940,7 @@
   </footer>
 
   <script src="js/bundle.js"></script>
+
 </body>
 
 </html>

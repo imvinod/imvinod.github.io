@@ -23,13 +23,12 @@ margin-bottom: 0 !important;
 }
 
 .hero-body{
-	padding-bottom: 8rem;
-	padding-top: 8rem;
+	padding-bottom: 3rem;
+	padding-top: 3rem;
 }
 
 #git-block{
-	text-align: center;
-	padding-top: 1rem;
+	padding-top: 0.7rem;
 }
 
 @keyframes gradient {
@@ -42,4 +41,26 @@ margin-bottom: 0 !important;
     100% {
         background-position: 0% 50%;
     }
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+.icon{
+color: black;
+}
+
+.level-item a{
+color:black;
+}
+
+.rounded-circle{
+border:1px solid transparent;
+border-color:grey;
+}
+
+.card .media{
+margin-bottom: 0.5rem !important;
 }
