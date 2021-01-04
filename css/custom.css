@@ -58,9 +58,13 @@ color:black;
 
 .rounded-circle{
 border:1px solid transparent;
-border-color:grey;
+border-color:white;
 }
 
 .card .media{
 margin-bottom: 0.5rem !important;
+}
+
+#nav-buttons{
+padding-top: 1rem;
 }
